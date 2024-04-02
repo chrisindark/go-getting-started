@@ -1,4 +1,4 @@
-package conversions
+package main
 
 import (
 	"fmt"
@@ -19,6 +19,8 @@ func main() {
 	arg2 := os.Args[2]
 	fmt.Println("argument: ", arg1)
 	fmt.Println("argument type: ", reflect.TypeOf(arg1))
+	fmt.Println("argument: ", arg2)
+	fmt.Println("argument type: ", reflect.TypeOf(arg2))
 
 	no1, err := strconv.Atoi(arg1)
 	if err != nil {

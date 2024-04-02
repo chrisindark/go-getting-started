@@ -14,6 +14,8 @@ go mod init example/go-getting-started
 go get github.com/gin-gonic/gin
 go get github.com/joho/godotenv
 
+go mod tidy
+
 go run .
 lsof -i :4000
 kill -9 <pid>
